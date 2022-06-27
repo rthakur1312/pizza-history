@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="styles.css" />
+    <title>Pizza</title>
+    <meta charset="UTF-8" />
+  </head>
+
+  <body id="pizza-app">
+    <div class = "content-container">
+     <div class = "title">
+      <h3>The history of</h3>
+      <img src = "images/ThePizza.png" alt = "The Pizza" />
+     </div>
+      <div class="rotate slide-up">
+        <div class="pizza-container">
+          <img src="images/pizza1.png" alt="pizza" />
+        </div>
+        <div class="pizza-content-container" id="pizza-content-container">
+          <h3 class="animate-charcter">THE ORIGIN STORY OF PIZZA</h3>
+
+          <div class="ul-container">
+            <ul>
+              <li class="top-li">
+                <div class="image-container image-line-down image-dot-down animationDelay5"><img src="images/79AD.svg" class="animationDelay5"/></div>
+                <div class="pizza-content animationDelay5">
+                  <h5>79 A.D</h5>
+                  <p>MT. Vesuvius erupted in Pompeii. Excavation revealed evidence of flat breads being baked with tools that resemble modern pizza supplies</p>
+                </div>
+              </li>
+
+              <li class="bottom-li">
+                <div class="image-container image-line-up image-dot-up animationDelay6"><img src="images/1522.png" class="animationDelay6"/></div>
+                <div  class="pizza-content animationDelay6">
+                  <h5>1522</h5>
+                  <p>Tomatoes brought from the new world were thought to be poisonous. Later, Naples managed to combine them with flat bread to make the earliest form of pizza in Italy </p>
+                </div>
+              </li>
+
+              <li class="top-li big-li-up">
+                <div class="image-container image-big-line-down image-dot-down animationDelay7"><img src="images/1880.svg" class="animationDelay7"/></div>
+                <div  class="pizza-content animationDelay7">
+                  <h5>1880</h5>
+                  <p>Pizza was invented by Thomas Alva Edison in Menlo Park</p>
+                </div>
+              </li>
+
+              <li class="bottom-li big-li-down">
+                <div class="image-container image-big-line-up image-dot-up big-line  animationDelay8"><img src="images/1889.svg" class="animationDelay8"/></div>
+                <div class="pizza-content animationDelay8">
+                  <h5>1889</h5>
+                  <p>The first time cheese was used in pizza when a chef made a pizza for Queen Margarita using tomato, cheese and basil to show the colors of the Italian Flag</p>
+                </div>
+              </li>
+
+              <li class="top-li">
+                <div class="image-container image-line-down image-dot-down animationDelay9"><img src="images/1889.svg" class="animationDelay9"/></div>
+                <div class="pizza-content animationDelay9">
+                  <h5>1905</h5>
+                  <p>Gennaro Lombardi opened the first true U.S. pizzeria</p>
+                </div>
+              </li>
+
+              <li class="bottom-li">
+                <div class="image-container image-line-up image-dot-up animationDelay10"><img src="images/1905.png" class="animationDelay10"/></div>
+                <div class="pizza-content animationDelay10">
+                  <h5>1943</h5>
+                  <p>The invention of Chicago style deep-dish pizza</p>
+                </div>
+              </li>
+
+              <li class="top-li big-li-up">
+                <div class="image-container image-big-line-down image-dot-down animationDelay11"><img src="images/1943.svg" class="animationDelay11"/></div>
+                <div class="pizza-content animationDelay11">
+                  <h5>1958</h5>
+                  <p>Pizza Hut was founded and has since become the world’s largest pizza franchise</p>
+                </div>
+              </li>
+
+              <li class="bottom-li big-li-down">
+                <div class="image-container image-big-line-up image-dot-up big-line  animationDelay12"><img src="images/today.svg" class="animationDelay12"/></div>
+                <div class="pizza-content animationDelay12">
+                  <h5>Today</h5>
+                  <p>Pizza is one of most popular foods worldwide, with 252 million pound of pizza consumed everyday</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+       </div>
+        <div class="pizza-container">
+          <img src="images/pizza2.png" alt="pizza" />
+        </div>
+      </div>
+    </div>
+</div>
+  
+  </body>
+
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function (){
+          setTimeout(() => {
+            pos = $('#pizza-content-container').offset();
+          $('.content-container').animate({scrollTop: (pos.top + 100)}, 3000);
+          }, 3000)
+        });
+    </script>
+</html>
